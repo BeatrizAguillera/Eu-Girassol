@@ -1,0 +1,38 @@
+/* STYLING LOGO - ALL PAGES */
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo .logoImage {
+  width: 100px;
+  margin: 3px;
+  animation: 2s ease forwards;
+}
+
+.egTitle {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 28px;
+}
+
+.egTitle,
+.copyright a {
+  transition: 0.3s ease-in-out;
+}
+
+.egTitle:hover,
+.copyright a:hover {
+  color: rgb(230, 206, 20);
+}
+
+@media (max-width: 624px) {
+  .logo {
+    width: 220px;
+  }
+
+  .logo span {
+    max-width: 50px;
+  }
+}

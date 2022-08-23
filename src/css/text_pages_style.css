@@ -1,0 +1,61 @@
+@import url(../css/reset.css);
+@import url(../css/components/logo.css);
+@import url(../css/header_footer_pages.css);
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Lora:ital,wght@0,400;1,400;1,500&family=Parisienne&family=Space+Mono&family=Bad+Script&family=Satisfy&display=swap");
+
+* {
+  color: white;
+}
+
+h1 {
+  font-family: "Satisfy";
+  font-weight: normal;
+  font-size: 55px;
+  margin: 20px 0;
+}
+
+.text_container {
+  margin: auto;
+  background-color: rgba(29, 29, 29, 0.651);
+  border-radius: 10px;
+  padding: 20px;
+  width: 600px;
+  line-height: 1.5em;
+  font-size: 1.1rem;
+}
+
+.section_footer {
+  text-align: center;
+  width: 300px;
+  font-size: 16px;
+  margin: 10px auto;
+}
+
+.section_footer p {
+  font-size: 17px;
+  font-family: "Space mono", "Courier New", Courier, monospace;
+}
+
+.section_footer address {
+  font: 30px "Satisfy";
+}
+
+.section_footer #btn_presentation {
+  width: max-content;
+  padding: 5px;
+  margin: 5px auto;
+  border: 2px solid rgba(161, 161, 161, 0.468);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.section_footer #btn_presentation:hover {
+  background-color: rgba(161, 161, 161, 0.425);
+}
+
+@media (max-width: 624px) {
+  .text_container {
+    width: 90vw;
+  }
+}

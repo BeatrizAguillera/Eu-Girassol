@@ -1,0 +1,238 @@
+@import url(../css/reset.css);
+@import url(../css/components/logo.css);
+@import url(../css/components/header_footer.css);
+@import url(../css/components/buttons.css);
+@import url(../css/components/quotations_style.css);
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Lora:ital,wght@0,400;1,400;1,500&family=Parisienne&family=Space+Mono&family=Alfa+Slab+One&family=Nixie+One&display=swap");
+
+/* Main Content */
+
+/* Main Header */
+
+#mainContentHeader {
+  background-color: rgb(236, 220, 101);
+  text-align: center;
+  padding: 20px;
+  height: fit-content;
+  position: relative;
+}
+
+#mainTitle {
+  margin-bottom: 8px;
+  font-family: "Nixie One", sans-serif;
+  font-size: 35px;
+}
+
+#mainSubtitle {
+  font-size: 22px;
+}
+
+#mainSubtitle::after {
+  content: "|";
+  margin-left: 5px;
+  opacity: 1;
+  animation: blinkingCursor 0.7s infinite;
+}
+
+@keyframes blinkingCursor {
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Main header  */
+
+/* Carousel */
+#mainContent #carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 650px;
+  padding: 50px;
+  position: relative;
+  background-color: rgb(28, 25, 5);
+}
+
+#carousel .outdoors {
+  border: 5px solid white;
+  background-color: rgba(0, 0, 0, 0.171);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken;
+  width: 100%;
+  height: 650px;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#carousel .outdoors .mainContentContainer {
+  background-color: rgba(29, 29, 29, 0.651);
+  border-radius: 10px;
+  padding: 30px;
+  width: 600px;
+}
+
+#carousel .outdoors .mainContentContainer h3 {
+  color: white;
+  font-size: calc(1.5em + 1vw);
+}
+
+#carousel .outdoors .mainContentContainer p {
+  color: white;
+  font-size: 22px;
+  line-height: 1.5em;
+  margin-top: 25px;
+}
+
+#outdoor1 {
+  background-image: url("../images/Outdoor1.jpg");
+}
+
+#outdoor2 {
+  background-image: url("../images/Outdoor2.jpg");
+}
+
+#outdoor3 {
+  background-image: url("../images/Outdoor3.jpg");
+}
+
+#carousel .outdoors.showing {
+  opacity: 1;
+  z-index: 3;
+}
+
+@media (max-width: 800px) {
+  .arrow {
+    font-size: 2.2em;
+    padding: 5px 8px;
+  }
+
+  #btnBack {
+    left: 10px;
+  }
+
+  #btnForward {
+    right: 10px;
+  }
+}
+
+@media (max-width: 624px) {
+  .arrow {
+    font-size: 1.8em;
+    padding: 3px 5px;
+    background-color: rgba(53, 53, 53, 0.493);
+  }
+
+  #btnBack {
+    left: 5px;
+  }
+
+  #btnForward {
+    right: 5px;
+  }
+
+  #mainContentHeader {
+    height: 135px;
+  }
+
+  #mainTitle {
+    font-size: 30px;
+  }
+
+  #carousel .outdoors .mainContentContainer {
+    width: 85vw;
+    height: fit-content;
+    padding: 30px;
+  }
+
+  #carousel .outdoors .mainContentContainer h3 {
+    font-size: calc(2em + 1vw);
+  }
+
+  #carousel .outdoors .mainContentContainer p,
+  button {
+    font-size: 18px;
+    margin-top: 15px;
+  }
+}
+
+/* Carousel */
+
+/* Presentation */
+
+#presentation {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: url("../images/presentation-background.jpg") no-repeat center top;
+  background-size: cover;
+  width: 100%;
+  height: max-content;
+}
+
+#presentationContent {
+  width: 50vw;
+  padding: 40px;
+}
+
+#presentationContent .title {
+  font-family: "parisienne";
+  color: white;
+  font-size: 3.8em;
+  margin-bottom: 10px;
+}
+
+#presentationContent .text {
+  color: white;
+  line-height: 1.7em;
+  font-size: 20px;
+  text-align: justify;
+}
+
+@media (max-width: 1200px) {
+  #presentationContent {
+    background-color: rgba(29, 29, 29, 0.651);
+    border-radius: 15px;
+    margin: 20px;
+    width: 70vw;
+    padding: 20px;
+  }
+
+  #presentationContent .title {
+    font-size: 3.5em;
+  }
+
+  #presentationContent .text {
+    font-size: calc(0.5em + 1vw);
+  }
+}
+
+@media (max-width: 900px) {
+  #presentation {
+    justify-content: center;
+  }
+
+  #presentation #presentationContent {
+    width: 90vw;
+  }
+
+  #presentationContent .text {
+    font-size: 18px;
+  }
+}
+/* Presentation */
+
+/* Main content */

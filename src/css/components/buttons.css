@@ -1,0 +1,79 @@
+/* Buttons  */
+
+/* Link Buttons */
+#carousel .outdoors #readMoreBtn a,
+#allTextsCall #allTextsBtn,
+#allTextsCall #allTextsBtn span {
+  text-decoration: none;
+  color: white;
+}
+
+#carousel .outdoors #readMoreBtn,
+#allTextsCall #allTextsBtn {
+  cursor: pointer;
+  text-align: center;
+}
+
+#carousel .outdoors #readMoreBtn {
+  background-color: rgba(29, 29, 29, 0.651);
+  border: 1px solid white;
+  border-radius: 8px;
+  font-size: 18px;
+  margin-top: 25px;
+  padding: 8px;
+}
+
+#allTextsCall {
+  border-top: 1px solid gray;
+  width: 100%;
+  height: 300px;
+  background: url(/src/images/sunflower_sunset_light.jpg) no-repeat top fixed;
+}
+
+.scaleEffect {
+  transition: transform 0.5s ease-in-out;
+}
+
+.scaleEffect:hover {
+  transform: scale(1.1);
+}
+
+#allTextsCall #allTextsBtn {
+  font-size: 25px;
+  margin: auto;
+  width: 80vw;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#allTextsCall #allTextsBtn span {
+  font-family: "Space Mono", monospace;
+  font-size: 30px;
+}
+
+/* Link Buttons */
+
+/* Arrows */
+
+.arrow {
+  font-size: 3em;
+  border-radius: 50%;
+  padding: 10px 15px;
+  background-color: rgba(90, 90, 90, 0.401);
+  position: absolute;
+  color: white;
+  cursor: pointer;
+  z-index: 3;
+}
+
+#btnBack {
+  left: 15px;
+}
+
+#btnForward {
+  right: 15px;
+}
+
+/* Arrows */

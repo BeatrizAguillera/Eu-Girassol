@@ -1,0 +1,109 @@
+@import url(../css/reset.css);
+@import url(../css/components/logo.css);
+@import url(../css/header_footer_pages.css);
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Lora:ital,wght@0,400;1,400;1,500&family=Parisienne&family=Space+Mono&family=Bad+Script&family=Satisfy&display=swap");
+
+* {
+  color: white;
+}
+
+main {
+  margin: auto 20px;
+}
+
+#main_caption {
+  width: 40vw;
+  margin: inherit;
+}
+
+#main_caption h1 {
+  font-family: "Inconsolata";
+  font-size: 35px;
+}
+
+#main_caption h2 {
+  font-weight: normal;
+  font-size: 20px;
+  margin-top: 15px;
+  line-height: 1.5em;
+}
+
+.pills ul {
+  display: flex;
+  padding: 8px 0;
+}
+
+.pills ul li {
+  background-color: rgb(146, 133, 37);
+  border-radius: 8px;
+  padding: 2px 5px;
+}
+
+.pills ul li:nth-child(2) {
+  margin: auto 8px;
+}
+
+#main_content {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.text_container {
+  background-color: rgba(29, 29, 29, 0.774);
+  border-radius: 10px;
+  width: 450px;
+  margin: 10px auto;
+  padding: 20px;
+  line-height: 1.5em;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+.text_container a {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.text_container h3 {
+  margin: 8px auto;
+  font-size: 22px;
+}
+
+@media (max-width: 1450px) {
+  #main_caption {
+    margin: auto 10px;
+  }
+
+  #main_content {
+    width: 50vw;
+  }
+  .text_container {
+    margin: 10px 0;
+    width: 800px;
+  }
+
+  .text_container h3 {
+    margin: 15px auto;
+    font-size: calc(0.8rem * 1vw);
+  }
+}
+
+@media (max-width: 750px) {
+  #main_caption {
+    width: fit-content;
+    margin: auto;
+    padding: 15px;
+    background-color: rgba(29, 29, 29, 0.774);
+    border-radius: 10px;
+  }
+
+  #main_caption h2 {
+    font-size: 18px;
+  }
+
+  #main_content {
+    width: 100%;
+  }
+}
