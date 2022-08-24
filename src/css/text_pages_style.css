@@ -1,6 +1,6 @@
 @import url(../css/reset.css);
 @import url(../css/components/logo.css);
-@import url(../css/header_footer_pages.css);
+@import url(../css/components/header_footer_pages.css);
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Lora:ital,wght@0,400;1,400;1,500&family=Parisienne&family=Space+Mono&family=Bad+Script&family=Satisfy&display=swap");
 
 * {
