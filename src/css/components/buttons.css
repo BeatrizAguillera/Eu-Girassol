@@ -27,7 +27,7 @@
   border-top: 1px solid gray;
   width: 100%;
   height: 300px;
-  background: url(/src/images/sunflower_sunset_light.jpg) no-repeat top fixed;
+  background: url(../../images/sunflower_sunset_light.jpg) no-repeat top fixed;
 }
 
 .scaleEffect {
